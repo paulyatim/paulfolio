@@ -6,7 +6,7 @@ document.body.style.fontFamily = "monospace";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div>
         <Content className="App"></Content>
       </div>
