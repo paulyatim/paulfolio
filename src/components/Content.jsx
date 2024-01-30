@@ -460,6 +460,17 @@ function Content() {
                 <div className="container-fluid justify-content-center section-lg">
                     <div className="col-7 scroll-section">
                         <h2>Contacto</h2>
+                        <div>
+                            <div>
+                                <p>jeanpaulyatimg@gmail.com</p>
+                            </div>
+                            <div>
+                                <p>@paul.folio</p>
+                            </div>
+                            <div>
+                                <p>@paul.folio</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </ParallaxLayer>
