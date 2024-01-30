@@ -197,10 +197,10 @@ h1 {
 }
 
 #bgBack1 {
-	background-image: url(./assets/bg-back-1.png);
+	background-image: url("./assets/bg-back-1.png");
 }
 #bgBack2 {
-	background-image: url(./assets/bg-back-2.png);
+	background-image: url("./assets/bg-back-2.png");
 }
 
 
