@@ -1,5 +1,7 @@
 import '../App.css';
 
+import Contacto from './Contacto';
+
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
@@ -22,6 +24,9 @@ import bgFront6 from '../assets/bg-front-6.png';
 import bgFront7 from '../assets/bg-front-7.png';
 import bgFront8 from '../assets/bg-front-8.png';
 import bgFront9 from '../assets/bg-front-9.png';
+import bgFront10 from '../assets/bg-front-10.png';
+import bgFront11 from '../assets/bg-front-11.png';
+import bgFront12 from '../assets/bg-front-12.png';
 
 function Content() {
 
@@ -30,7 +35,7 @@ function Content() {
     return (
         <Parallax pages={13} ref={ref}>
             {/* NavBar */}
-            <ParallaxLayer className='nav-layer' offset={0} sticky={{start: 0, end: 17}}>
+            <ParallaxLayer className='nav-layer' offset={0} sticky={{start: 0, end: 13}}>
                 <nav className="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
                     <div className="container-fluid">
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +56,7 @@ function Content() {
                                     <div className="nav-link" onClick={() => ref.current.scrollTo(9.8)}>audiovisual</div>
                                 </li>
                                 <li className="nav-item">
-                                    <div className="nav-link" onClick={() => ref.current.scrollTo(11)}>contacto</div>
+                                    <div className="nav-link" onClick={() => ref.current.scrollTo(12)}>contacto</div>
                                 </li>
                             </ul>
                         </div>
@@ -89,13 +94,13 @@ function Content() {
                 </div>
             </ParallaxLayer>
             {/* Foto Back */}
-            <ParallaxLayer className='bg-image' offset={0} speed={1} sticky={{start: 0, end: 15}} style={{zIndex: -1}}>
+            <ParallaxLayer className='bg-image' offset={0} speed={1} sticky={{start: 0, end: 13}} style={{zIndex: -1}}>
                 <div className="heroImage">
                     <img src={hero} alt="foto de Paul Yatim" className="img-fluid fixed-bottom"/>
                 </div>
             </ParallaxLayer>
             {/* Foto Front */}
-            <ParallaxLayer className='bg-image' offset={0} speed={1} sticky={{start: 0, end: 15}} style={{zIndex: 5}}>
+            <ParallaxLayer className='bg-image' offset={0} speed={1} sticky={{start: 0, end: 13}} style={{zIndex: 5}}>
                 <div className="heroImage">
                     <img src={heroFront} alt="foto de Paul Yatim" className="img-fluid fixed-bottom"/>
                 </div>
@@ -456,21 +461,14 @@ function Content() {
                     </div>
                 </div>
             </ParallaxLayer>
-            <ParallaxLayer offset={11.5} speed={0.5}>
-                <div className="container-fluid justify-content-center section-lg">
+            <ParallaxLayer className='PL-child' offset={12} speed={0.5} id='contacto'>
+                <div className="container-fluid justify-content-end section-lg">
                     <div className="col-7 scroll-section">
-                        <h2>Contacto</h2>
                         <div>
-                            <div>
-                                <p>jeanpaulyatimg@gmail.com</p>
-                            </div>
-                            <div>
-                                <p>@paul.folio</p>
-                            </div>
-                            <div>
-                                <p>@paul.folio</p>
-                            </div>
+                            <h2>contacto</h2>
+                            <p>Escríbanme! Estoy activamente buscando trabajo, así que si les interesa lo que tengo para ofrecer, entremos en contacto así podemos trabajar juntos!</p>
                         </div>
+                        <Contacto></Contacto>
                     </div>
                 </div>
             </ParallaxLayer>
@@ -519,6 +517,21 @@ function Content() {
             <ParallaxLayer className='bg-front' offset={8.4} speed={1} factor={1} sticky={{start: 8.4, end: 8.5}} id='bgFront7'>
                 <div>
                     <img src={bgFront9} alt="" className="img-fluid fixed-bottom"/>
+                </div>
+            </ParallaxLayer>
+            <ParallaxLayer className='bg-front' offset={9.5} speed={1} factor={1} sticky={{start: 9.5, end: 10.7}} id='bgFront7'>
+                <div>
+                    <img src={bgFront10} alt="" className="img-fluid fixed-bottom"/>
+                </div>
+            </ParallaxLayer>
+            <ParallaxLayer className='bg-front' offset={9.5} speed={1} factor={1} sticky={{start: 9.5, end: 9.7}} id='bgFront7'>
+                <div>
+                    <img src={bgFront11} alt="" className="img-fluid fixed-bottom"/>
+                </div>
+            </ParallaxLayer>
+            <ParallaxLayer className='bg-front' offset={10} speed={1} factor={1} sticky={{start: 10.5, end: 10.7}} id='bgFront7'>
+                <div>
+                    <img src={bgFront12} alt="" className="img-fluid fixed-bottom"/>
                 </div>
             </ParallaxLayer>
         </Parallax>

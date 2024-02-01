@@ -1,5 +1,14 @@
-.App {
-  margin: 0;
+@font-face {
+	font-family: futura;
+	src: url('./assets/Futura.ttc');
+}
+@font-face {
+	font-family: cubano;
+	src: url('./assets/Cubano.ttf');
+}
+
+#root {
+	font-family: futura;
 }
 
 .container-fluid {
@@ -51,9 +60,8 @@
   width: inherit;
 }
 
-h1 {
-	font-size: 200px !important;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+p {
+	font-size: 18px;
 }
 
 .intro {
@@ -70,27 +78,25 @@ h1 {
 .section-lg {
   width: 100vw;
   z-index: 1;
-  /* padding-top: 10vh; */
-  /* padding-right: 5vw !important; */
 } 
 
 .scroll-section {
   text-align: center;
   align-self: center;
-  padding: 0 20px;
+  padding: 0 50px;
   display: flex;
   flex-direction: column; }
   .scroll-section span {
     color: #4fcc8a; } 
 .scroll-section h3 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: bold;
   margin: 50px 0;
 }
 .scroll-section h2 {
-  font-size: 36px;
-  color: #4fcc8a;
-  font-weight: bold;
+  	font-size: 56px;
+  	color: #4fcc8a;
+  	font-weight: bold;
 }
 .section-top {
   align-self: auto;
@@ -101,7 +107,6 @@ h1 {
 
 
 .top3 {
-  /* background-color: #4fcc8a; */
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -114,11 +119,21 @@ h1 {
 }
 .top3 img {
   width: 80%;
+  transition: 0.5s;
 }
+.top3 img:hover {
+	width: 90%;
+  }
 
 .top3 h4 {
-  font-size: 8vw;
-  font-weight: bold;
+	font-family: cubano;
+  	font-size: 8vw;
+  	font-weight: bold;
+	transition: 0.5s;
+}
+.top3 h4:hover {
+	color: #4fcc8a;
+	font-size: 9vw;
 }
 
 #albumes {
@@ -153,7 +168,7 @@ h1 {
 }
 
 .scroll-section h5 {
-	font-size: 16px;
+	font-size: 24px;
 	font-weight: bold;
 	color: #4fcc8a;
 }
@@ -209,6 +224,36 @@ h1 {
 }
 #bgFront2, #bgFront3, #bgFront4, #bgFront5, #bgFront6, #bgFront7, #bgFront8 {
 	width: 44% !important;
+}
+
+
+#contacto {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#contacto .scroll-section{
+	gap: 10vh;
+}
+.icons-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+}
+.icon-contact {
+	width: 18%;
+	cursor: pointer;
+}
+/* .tooltip {
+	width: 100%;
+} */
+.tooltip {
+	font-family: futura !important;
+	font-size: 40px !important;
+	/* transition: 0.5s !important; */
+	color: rgba(255, 255, 255, 0.2);
+	
 }
 
 
