@@ -495,3 +495,103 @@ p {
 	background-blend-mode: multiply;
 	border-top-right-radius: 20% 90%;
 }
+
+
+@media screen and (max-width: 600px) {
+	.navbar-collapse {
+	  background-color: black;
+	}
+	.navbar-nav {
+		font-size: 20px;
+		gap: 10px;
+	}
+	#paulYatim {
+		margin: 0 !important;
+		width: 100% !important;
+	}
+	#paulYatim svg{
+		height: min-content;
+		margin-top: 10vh;
+	}
+	.bg-image {
+		width: 100% !important;
+	}
+	.heroImage {
+		position: absolute;
+		bottom: 0;
+	}
+	.heroImage img {
+		width: 100%;
+	}
+	#fotoBack {
+		display: none !important;
+	}
+	#bienvenidxs {
+		height: min-content !important;
+	}
+	.scroll-section {
+		width: 100% !important;
+	}
+	.scroll-section h2 {
+		font-size: 40px;
+	}
+	.scroll-section h3 {
+		font-size: 32px;
+	}
+	.scroll-section p {
+		font-size: 16px;
+		margin-top: 10px;
+	}
+	#bgFront1 {
+		width: 76% !important;
+	}
+	.PL-sticky {
+		position: sticky;
+		top: 0;
+	}
+	.PL-child {
+		gap: 20vh;
+		margin-bottom: 20vh;
+		padding-top: 30vh;
+	}
+	.scroll-section {
+		padding: 0 20px;
+	}
+	.section-top {
+		padding-top: 10vh;
+	}
+	.top3 {
+		flex-direction: column;
+		gap: 50px;
+	}
+	.top3 h4{
+		font-size: 32vw;
+	}
+	.top3 h4:hover{
+		font-size: 36vw;
+	}
+	#albumes li {
+		height: auto;
+	}
+	#albumes iframe {
+		height: 400px;
+	}
+	.mbp-display .display-frame iframe {
+		width: 500%;
+		height: 500%;
+		-moz-transform: scale(0.20);
+		-o-transform: scale(0.20);
+		-webkit-transform: scale(0.20);
+		transform: scale(0.20);
+	}
+	.video {
+		height: 24vh;
+	}
+	#projsDesarrollo {
+		gap: 20vh;
+	}
+	#projsDesarrollo .tags{
+		gap: 10px;
+	}
+
+}
