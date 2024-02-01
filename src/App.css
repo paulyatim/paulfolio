@@ -133,7 +133,7 @@ p {
 }
 .top3 h4:hover {
 	color: #4fcc8a;
-	font-size: 9vw;
+	transform: scale(1.2);
 }
 
 #albumes {
@@ -509,10 +509,9 @@ p {
 		margin: 0 !important;
 		width: 100% !important;
 	}
-	#paulYatim svg{
-		height: min-content;
+	/* #paulYatim svg{
 		margin-top: 10vh;
-	}
+	} */
 	.bg-image {
 		width: 100% !important;
 	}
@@ -568,7 +567,7 @@ p {
 		font-size: 32vw;
 	}
 	.top3 h4:hover{
-		font-size: 36vw;
+		transform: scale(1.2);
 	}
 	#albumes li {
 		height: auto;
