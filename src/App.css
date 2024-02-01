@@ -592,5 +592,9 @@ p {
 	#projsDesarrollo .tags{
 		gap: 10px;
 	}
+	.tooltip {
+		font-size: 18px !important;
+		
+	}
 
 }
