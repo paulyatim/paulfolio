@@ -393,7 +393,7 @@ function Content() {
                 <div className="container-fluid justify-content-end section-lg">
                     <div className="col-7 scroll-section">
                         <Link to={'https://paulyatim.github.io/eeaao/'} target='_blank' className='link'><h3>EEAAO - Sitio Web</h3></Link>
-                        <h5>08/21</h5>
+                        <h5>06/23</h5>
                         <div className="mbp-mockup-wrapper">
                             <div className="mbp-container">
                                 <div className="mbp-display with-glare">
